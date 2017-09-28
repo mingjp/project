@@ -146,13 +146,15 @@
 
 #main .goodslist .shopp p a:first-child { color: red; border-top: 2px solid red; box-sizing: border-box; }
 
-#main .goodslist .select { background: #F5F5F5; padding: 10px 0; }
+#main .goodslist .select { background: #F5F5F5; padding: 10px 0; z-index: 99; }
 
 #main .goodslist .select ul { padding-left: 30px; overflow: hidden; width: 282px; float: left; }
 
 #main .goodslist .select ul li { float: left; width: 45px; text-align: center; height: 25px; line-height: 25px; border: 1px solid #EDEDED; background: #fff; }
 
-#main .goodslist .select ul li a { font-size: 12px; }
+#main .goodslist .select ul li span { font-size: 12px; }
+
+#main .goodslist .select ul .active { background: red; color: #fff; }
 
 #main .goodslist .select ul li:hover { border-color: red; }
 
@@ -192,7 +194,13 @@
 
 #main .goodslist .goods ul li h4:hover { text-decoration: underline; }
 
-#main .goodslist .goods ul li p { font-size: 12px; font-weight: bold; }
+#main .goodslist .goods ul li p:first-of-type { font-size: 12px; height: 12px; line-height: 12px; }
+
+#main .goodslist .goods ul li p:first-of-type > span:last-child { padding-left: 20px; }
+
+#main .goodslist .goods ul li p:last-of-type { font-size: 12px; font-weight: bold; }
+
+#main .goodslist .goods ul li span:hover { color: red; }
 
 #main .goodslist .goods + div { background: #fff; }
 
@@ -254,7 +262,7 @@
 
 #main .goodslist .assess .box p span:last-child:hover { background: red; color: #fff; }
 
-#main .goodslist .tocar { position: fixed; top: 50%; left: 50%; width: 300px; display: none; transform: translate(-50%, -50%); height: 180px; background: #fff; border: 1px solid #f5f5f5; z-index: 99; }
+#main .goodslist .tocar { position: fixed; top: 50%; left: 50%; width: 300px; display: none; transform: translate(-50%, -50%); height: 180px; background: #fff; border: 1px solid #ccc; z-index: 99; }
 
 #main .goodslist .tocar p:first-of-type { margin: 2px; background: #564A95; color: #fff; padding-left: 20px; height: 40px; line-height: 40px; }
 
