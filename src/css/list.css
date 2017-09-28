@@ -1,0 +1,273 @@
+.fixed { position: fixed; top: 0; left: 0; right: 0; }
+
+#main { width: 100%; background: #EDEDED; }
+
+#main .goodslist { padding-top: 28px; }
+
+#main .goodslist a:hover { color: red; }
+
+#main .goodslist .all { font-size: 12px; line-height: 40px; }
+
+#main .goodslist .all span:first-child { margin: 0 5px; font-size: 15px; color: #333; }
+
+#main .goodslist .all span:last-child { float: right; }
+
+#main .goodslist .list { padding-bottom: 30px; }
+
+#main .goodslist .list dl:first-child { background: #f5f5f5; }
+
+#main .goodslist .list dl:first-child dd { float: left; width: 1078px; background: #fff; padding: 15px 0 10px 10px; }
+
+#main .goodslist .list dl:first-child dd ul { overflow: hidden; width: 900px; border-top: 1px solid #f5f5f5; border-left: 1px solid #f5f5f5; box-sizing: border-box; }
+
+#main .goodslist .list dl:first-child dd ul li { width: 99px; height: 99px; border-bottom: 1px solid #f5f5f5; border-right: 1px solid #f5f5f5; float: left; box-sizing: border-box; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(1) i { background-position: 0px -90px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(2) i { background-position: -110px -90px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(3) i { background-position: -220px -90px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(4) i { background-position: -330px -90px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(5) i { background-position: -440px -90px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(6) i { background-position: -550px -90px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(7) i { background-position: -660px -90px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(8) i { background-position: -770px -90px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(9) i { background-position: -880px -90px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(10) i { background-position: 0px -90px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(11) i { background-position: -110px -90px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(12) i { background-position: -220px -90px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(13) i { background-position: -330px -90px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(14) i { background-position: -440px -90px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(15) i { background-position: -550px -90px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(16) i { background-position: -660px -90px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(17) i { background-position: -770px -90px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(18) i { background-position: -880px -90px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(1):hover { border: 1px solid black; box-sizing: border-box; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(2):hover { border: 1px solid black; box-sizing: border-box; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(3):hover { border: 1px solid black; box-sizing: border-box; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(4):hover { border: 1px solid black; box-sizing: border-box; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(5):hover { border: 1px solid black; box-sizing: border-box; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(6):hover { border: 1px solid black; box-sizing: border-box; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(7):hover { border: 1px solid black; box-sizing: border-box; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(8):hover { border: 1px solid black; box-sizing: border-box; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(9):hover { border: 1px solid black; box-sizing: border-box; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(10):hover { border: 1px solid black; box-sizing: border-box; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(11):hover { border: 1px solid black; box-sizing: border-box; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(12):hover { border: 1px solid black; box-sizing: border-box; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(13):hover { border: 1px solid black; box-sizing: border-box; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(14):hover { border: 1px solid black; box-sizing: border-box; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(15):hover { border: 1px solid black; box-sizing: border-box; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(16):hover { border: 1px solid black; box-sizing: border-box; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(17):hover { border: 1px solid black; box-sizing: border-box; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(18):hover { border: 1px solid black; box-sizing: border-box; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(10):hover i { background-position: 0px -200px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(11):hover i { background-position: -110px -200px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(12):hover i { background-position: -220px -200px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(13):hover i { background-position: -330px -200px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(14):hover i { background-position: -440px -200px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(15):hover i { background-position: -550px -200px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(16):hover i { background-position: -660px -200px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(17):hover i { background-position: -770px -200px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(18):hover i { background-position: -880px -200px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(1):hover i { background-position: 0px -200px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(2):hover i { background-position: -110px -200px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(3):hover i { background-position: -220px -200px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(4):hover i { background-position: -330px -200px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(5):hover i { background-position: -440px -200px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(6):hover i { background-position: -550px -200px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(7):hover i { background-position: -660px -200px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(8):hover i { background-position: -770px -200px; }
+
+#main .goodslist .list dl:first-child dd ul li:nth-child(9):hover i { background-position: -880px -200px; }
+
+#main .goodslist .list dl:first-child dd ul i { display: inline-block; width: 99px; height: 99px; background: url("../img/siku.png") no-repeat; background-position: 0 -90px; }
+
+#main .goodslist .list dl { border-bottom: 1px dashed #ccc; background: #f5f5f5; overflow: hidden; }
+
+#main .goodslist .list dl dt { display: inline-block; width: 112px; background: #F5F5F5; font-size: 12px; text-align: center; float: left; margin-top: 20px; }
+
+#main .goodslist .list dl dd { float: left; width: 1088px; background: #fff; }
+
+#main .goodslist .list dl dd a { display: inline-block; font-size: 12px; padding: 20px; }
+
+#main .goodslist .shopp p { height: 40px; line-height: 40px; background: #fff; }
+
+#main .goodslist .shopp p a { display: inline-block; width: 172px; height: 20px; line-height: 20px; font-size: 20px; text-align: center; padding: 10px 0; color: #B2B2A5; }
+
+#main .goodslist .shopp p a:first-child { color: red; border-top: 2px solid red; box-sizing: border-box; }
+
+#main .goodslist .select { background: #F5F5F5; padding: 10px 0; }
+
+#main .goodslist .select ul { padding-left: 30px; overflow: hidden; width: 282px; float: left; }
+
+#main .goodslist .select ul li { float: left; width: 45px; text-align: center; height: 25px; line-height: 25px; border: 1px solid #EDEDED; background: #fff; }
+
+#main .goodslist .select ul li a { font-size: 12px; }
+
+#main .goodslist .select ul li:hover { border-color: red; }
+
+#main .goodslist .select p { float: left; margin-left: 20px; height: 24px; line-height: 24px; background: #F5F5F5; }
+
+#main .goodslist .select p:first-of-type input { width: 45px; }
+
+#main .goodslist .select p:nth-of-type(2) { font-size: 14px; color: #666; }
+
+#main .goodslist .select p:last-child { background: #fff; border: 1px solid #EDEDED; }
+
+#main .goodslist .select p:last-child input { border: none; }
+
+#main .goodslist .select p:last-child span { display: inline-block; width: 40px; text-align: center; color: #666666; font-size: 14px; border-left: 1px solid #ccc; }
+
+#main .goodslist .goods { background: #fff; padding: 30px 20px 0; }
+
+#main .goodslist .goods ul { overflow: hidden; }
+
+#main .goodslist .goods ul li { float: left; width: 240px; margin: 0 10px; padding: 0 10px; height: 410px; width: 270px; box-sizing: border-box; border: 2px solid #fff; }
+
+#main .goodslist .goods ul li a { background: #FF0000; color: #fff; opacity: 0.8; width: 70px; height: 20px; font-size: 12px; line-height: 20px; text-align: center; display: none; }
+
+#main .goodslist .goods ul li a:hover { opacity: 1; }
+
+#main .goodslist .goods ul li > span:last-of-type { display: none; font-size: 12px; color: #666; float: right; }
+
+#main .goodslist .goods ul li:hover { border-color: #ccc; }
+
+#main .goodslist .goods ul li:hover a { display: inline-block; }
+
+#main .goodslist .goods ul li:hover > span { display: block; }
+
+#main .goodslist .goods ul li img { border-bottom: 1px solid #ccc; padding-bottom: 20px; }
+
+#main .goodslist .goods ul li h4 { font-size: 12px; font-weight: normal; height: 40px; margin-top: 10px; }
+
+#main .goodslist .goods ul li h4:hover { text-decoration: underline; }
+
+#main .goodslist .goods ul li p { font-size: 12px; font-weight: bold; }
+
+#main .goodslist .goods + div { background: #fff; }
+
+#main .goodslist .goods + div .page { width: 450px; margin: 0 auto; }
+
+#main .goodslist .goods + div .page span { display: inline-block; margin: 5px; width: 25px; height: 25px; font-size: 12px; line-height: 25px; text-align: center; color: #666; border: 1px solid #ccc; }
+
+#main .goodslist .goods + div .page span:first-child { width: 54px; }
+
+#main .goodslist .goods + div .page span:nth-last-of-type(2) { width: 54px; }
+
+#main .goodslist .goods + div .page span:hover { border-color: black; }
+
+#main .goodslist .goods + div .page span.active { border: none; color: red; }
+
+#main .goodslist .goods + div .page .span { border: none; width: 56px; font-size: 14px; }
+
+#main .goodslist .top { background: #fff; padding-top: 38px; }
+
+#main .goodslist .top p { padding-left: 30px; font-size: 14px; font-weight: bold; margin-bottom: 12px; }
+
+#main .goodslist .top ul { overflow: hidden; padding: 0 30px; }
+
+#main .goodslist .top ul li { float: left; width: 160px; margin-right: 32px; height: 234px; }
+
+#main .goodslist .top ul li:last-child { margin-right: 0; }
+
+#main .goodslist .top ul li img { width: 160px; border: 1px solid #f5f5f5; }
+
+#main .goodslist .top ul li a { display: block; height: 28px; font-size: 12px; color: #666; }
+
+#main .goodslist .top ul li a:hover { text-decoration: underline; color: black; }
+
+#main .goodslist .top ul li span { display: block; font-size: 12px; font-weight: bold; margin: 8px 0; }
+
+#main .goodslist .top .serach_b { margin: 40px 0; }
+
+#main .goodslist .top .serach_b p { padding: 0; width: 706px; margin: 0 auto; height: 34px; position: relative; }
+
+#main .goodslist .top .serach_b p input { width: 632px; height: 30px; border: 2px solid #463B7F; }
+
+#main .goodslist .top .serach_b p button { position: absolute; right: 0; top: 0; width: 70px; height: 34px; border: none; background: #574B97; color: #fff; }
+
+#main .goodslist .assess { padding: 30px 0 70px; }
+
+#main .goodslist .assess .box { height: 115px; background: #fff; }
+
+#main .goodslist .assess .box p { padding: 20px 0 20px 30px; font-size: 14px; height: 30px; line-height: 30px; }
+
+#main .goodslist .assess .box p:last-child { padding-top: 0; color: #666; }
+
+#main .goodslist .assess .box p span { display: inline-block; width: 45px; border: 1px solid #ccc; margin: 0 5px; text-align: center; }
+
+#main .goodslist .assess .box p span.active { background: red; color: #fff; }
+
+#main .goodslist .assess .box p span:hover { border-color: red; }
+
+#main .goodslist .assess .box p span:last-child { float: right; border: none; font-size: 20px; }
+
+#main .goodslist .assess .box p span:last-child:hover { background: red; color: #fff; }
+
+#main .goodslist .tocar { position: fixed; top: 50%; left: 50%; width: 300px; display: none; transform: translate(-50%, -50%); height: 180px; background: #fff; border: 1px solid #f5f5f5; z-index: 99; }
+
+#main .goodslist .tocar p:first-of-type { margin: 2px; background: #564A95; color: #fff; padding-left: 20px; height: 40px; line-height: 40px; }
+
+#main .goodslist .tocar p:first-of-type span { display: inline-block; width: 40px; text-align: center; font-size: 30px; color: #fff; float: right; }
+
+#main .goodslist .tocar h4 { line-height: 60px; margin-top: 20px; color: #564A95; text-align: center; }
+
+#main .goodslist .tocar .tocar_b { text-align: center; }
+
+#main .goodslist .tocar .tocar_b a, #main .goodslist .tocar .tocar_b span { display: inline-block; padding: 0 5px; height: 20px; font-size: 12px; line-height: 20px; }
+
+#main .goodslist .tocar .tocar_b a { background: #FF0000; opacity: 0.8; color: #fff; }
+
+#main .goodslist .tocar .tocar_b span { background: #f5f5f5; color: #666; }
+
+#main .goodslist .tocar .tocar_b span:hover { color: red; }
