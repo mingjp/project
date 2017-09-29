@@ -188,15 +188,21 @@
 
 #main .goodslist .goods ul li:hover > span { display: block; }
 
+#main .goodslist .goods ul li:hover .describe { display: block; }
+
 #main .goodslist .goods ul li img { border-bottom: 1px solid #ccc; padding-bottom: 20px; }
 
 #main .goodslist .goods ul li h4 { font-size: 12px; font-weight: normal; height: 40px; margin-top: 10px; }
 
 #main .goodslist .goods ul li h4:hover { text-decoration: underline; }
 
+#main .goodslist .goods ul li > span:first-of-type { display: block; width: 40px; font-size: 12px; background: black; color: #fff; text-align: center; }
+
+#main .goodslist .goods ul li .describe { display: none; }
+
 #main .goodslist .goods ul li p:first-of-type { font-size: 12px; height: 12px; line-height: 12px; }
 
-#main .goodslist .goods ul li p:first-of-type > span:last-child { padding-left: 20px; }
+#main .goodslist .goods ul li p:first-of-type > span:first-child { padding-right: 20px; }
 
 #main .goodslist .goods ul li p:last-of-type { font-size: 12px; font-weight: bold; }
 

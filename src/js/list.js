@@ -39,8 +39,9 @@
                     return `
                             <li id="${item.id}">
                                 <img src="${item.imgurl}">
+                                <span>${item.city}</span>
                                 <h4>${item.title}</h4>
-                                <p>颜色:<span class="color">${item.color}</span>尺寸:<span class="size">${item.size}</span></p>
+                                <p class="describe">颜色:<span class="color">${item.color}</span>尺寸:<span class="size">${item.size}</span></p>
                                 <p>￥<span class="price">${item.price}</span></p>
                                 <a class="addcar">加入购物车</a>
 
@@ -155,16 +156,12 @@
         $('.goods').on('click','.addcar',function(){
 
             $('.tocar').css('display','block');
-            // var $imgurl=$(this).parent().find('img')[0].src;
-            // var $price=$('.price')[0].innerText;
-            // var $color=$('.color')[0].innerText;
-            // var $size=$('.size')[0].innerText;
             console.log($(this).parent()[0].id);
 
             var has = false;
                 for(var i=0;i<carlist.length;i++){
                     // 已经存在
-                    if(carlist[i].id === guid){
+                    if(carlist[i].id === $(this).parent()[0].id){
                         carlist[i].qty++;
                         has=true;
                         break;
@@ -174,12 +171,13 @@
                 // 不存在
                 if(!has){
                     var goods = {
+                        qty:1,
                         imgurl:$(this).parent().find('img')[0].src,
                         title:$(this).parent().find('h4')[0].innerText,
-                        price:$('.price')[0].innerText,
-                        color:$('.color')[0].innerText,  
-                        size:$('.size')[0].innerText,       
-                        qty:1,
+                        price:$(this).parent().find($('.price'))[0].innerText,
+                        color:$(this).parent().find($('.color'))[0].innerText,  
+                        size:$(this).parent().find($('.size'))[0].innerText, 
+                        city:$(this).parent().find('span')[0].innerText,      
                         id:$(this).parent()[0].id
                     }
 
