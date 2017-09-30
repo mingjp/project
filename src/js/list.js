@@ -59,7 +59,7 @@
             if(xhr.status === 200 || xhr.status === 304){
 
                 res = JSON.parse(xhr.responseText);
-            
+                console.log(res);
 
                 // 生成结构
                 var $ul =$('<ul/>');
@@ -110,19 +110,20 @@
             $('.sortPirce').on('click',function(){
              
                 if(order){
-                    for(var i=0;i<(res.data).length;i++){
+                    for(let i=0;i<(res.data).length;i++){console.log(i,res.data[i].price);
                         // 注意变量初始化的值
-                        for(var j=i+1;j<(res.data).length;j++){
+                        for(let j=i+1;j<(res.data).length;j++){
                             if(res.data[i].price<res.data[j].price){
-                                var temp = res.data[i];
+                                let temp = res.data[i];
                               res.data[i] =  res.data[j];
                                  res.data[j] = temp;
+
                             }
                         }
                     }
 
                     $('.goods').html('');
-                    var $ul =$('<ul/>');
+                    let $ul =$('<ul/>');
                     
                     // $ul=$('.goods ul');
                     console.log($ul[0])
@@ -131,11 +132,11 @@
                     order=false;
                 }
                 else{
-                   for(var i=0;i<(res.data).length;i++){
+                   for(let i=0;i<(res.data).length;i++){
                         // 注意变量初始化的值
-                        for(var j=i+1;j<(res.data).length;j++){
+                        for(let j=i+1;j<(res.data).length;j++){
                             if(res.data[i].price>res.data[j].price){
-                                var temp = res.data[i];
+                                let temp = res.data[i];
                                res.data[i] = res.data[j];
                                res.data[j] = temp;
                             }
@@ -186,6 +187,17 @@
                 }
                 document.cookie = 'carlist=' + JSON.stringify(carlist);
         })
+        
+        // 向详情页传递id
+        $('.goods').on('click','img',function(){
+            var params = '';
+            var id=$(this).parent()[0].id;
+
+            // 删除多余的&
+            params = params.slice(0,-1);console.log(params)
+
+            location.href="details.html?id=" + id;
+        });
 
 
         $('.tocar').on('click','.car_del',function(){

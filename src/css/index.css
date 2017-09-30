@@ -2,9 +2,9 @@ header { width: 100%; position: relative; }
 
 header .h_left { height: 110px; margin-top: 20px; background: url("../img/erweim.jpg") no-repeat; float: left; }
 
-header h2, header .main .goods li.active p, .main .goods li.active header p, header h4 { padding-left: 95px; font-weight: normal; }
+header h2, header .main .topic li:hover p, .main .topic li:hover header p, header h4 { padding-left: 95px; font-weight: normal; }
 
-header h2, header .main .goods li.active p, .main .goods li.active header p { font-size: 18px; }
+header h2, header .main .topic li:hover p, .main .topic li:hover header p { font-size: 18px; }
 
 header h4 { font-size: 16px; }
 
@@ -50,7 +50,7 @@ nav .u1 > li:hover > a { color: #F8A120; }
 
 nav .u1 > li:hover .goodslist { display: block; }
 
-nav .goodslist { padding: 50px 0; width: 100%; background: #fff; opacity: 0.8; position: absolute; top: 44px; left: 0; z-index: 100; display: none; border-bottom: 3px solid #F8A120; }
+nav .goodslist { padding: 50px 0; width: 100%; background: #fff; opacity: 0.9; position: absolute; top: 44px; left: 0; z-index: 100; display: none; border-bottom: 3px solid #F8A120; }
 
 nav .goodslist li { float: left; width: 350px; margin-right: 50px; }
 
@@ -80,31 +80,35 @@ nav .serach input { outline: none; border: none; padding: 7px 50px 7px 10px; }
 
 .banner .box .page .active { background: orange; }
 
-.banner .box .btn-next, .banner .box .btn-prev { width: 20px; height: 80px; text-align: center; line-height: 80px; position: absolute; top: 50%; transform: translate(0, -50%); background: #ccc; opacity: 0.5; }
+.banner .box .btn-next, .banner .box .btn-prev { width: 20px; height: 80px; text-align: center; line-height: 80px; position: absolute; top: 50%; transform: translate(0, -50%); background: #ccc; opacity: 0.8; display: none; font-size: 20px; color: orange; }
 
 .banner .box .btn-next { right: 0; }
 
 .banner .box .btn-prev { left: 0; }
 
-.main .goods ul { overflow: hidden; }
+.banner .box:hover .btn-next, .banner .box:hover .btn-prev { display: block; }
 
-.main .goods li { float: left; height: 450px; margin-right: 20px; }
+.main .topic ul { overflow: hidden; }
 
-.main .goods li a { box-sizing: border-box; display: block; width: 590px; height: 330px; overflow: hidden; }
+.main .topic li { float: left; height: 450px; margin-right: 20px; }
 
-.main .goods li a img { width: 590px; height: 330px; }
+.main .topic li a { box-sizing: border-box; display: block; width: 590px; height: 330px; overflow: hidden; }
 
-.main .goods li:nth-child(2n) { margin-right: 0; }
+.main .topic li a img { width: 590px; height: 330px; transition: 1.5s; }
 
-.main .goods li h2, .main .goods li.active p { margin: 20px 0 12px 0; font-weight: normal; }
+.main .topic li:nth-child(2n) { margin-right: 0; }
 
-.main .goods li p { margin: 0; padding: 0; }
+.main .topic li h2, .main .topic li:hover p { margin: 20px 0 12px 0; font-weight: normal; }
 
-.main .goods li.active a { border-bottom: 2px solid orange; }
+.main .topic li p { margin: 0; padding: 0; }
 
-.main .goods li.active h2, .main .goods li.active p { color: orange; }
+.main .topic li:hover a { border-bottom: 2px solid orange; }
 
-.main .goods li.active p { margin: 0; }
+.main .topic li:hover h2, .main .topic li:hover p { color: orange; }
+
+.main .topic li:hover p { margin: 0; }
+
+.main .topic li:hover img { transform: scale(1.2, 1.2); }
 
 .goods_like .title { width: 100%; border-top: 1px solid orange; text-align: center; margin: 76px 0 30px 0; position: relative; }
 

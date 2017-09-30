@@ -10,7 +10,7 @@
 
 
             //商品展示
-            var $goods=$('.goods');
+            var $topic=$('.topic');
             var xhr=new XMLHttpRequest();
             xhr.onload=function(){
                 if(xhr.status === 200 || xhr.status === 304){
@@ -26,24 +26,12 @@
                             </li>
                     `
                 }).join('');
-                $goods.append(ul);
+                $topic.append(ul);
 
                 }
             }
-            xhr.open('get','api/data/goods.json',true);
+            xhr.open('get','api/data/index.json',true);
             xhr.send();
-
-            //动态效果
-            $goods.on('mouseenter.drag','li',function(){
-
-                $(this).find('img').animate({width:675,height:378})
-                $(this).addClass('active');
-                
-            }).on('mouseleave.drag','li',function(){
-               
-                $(this).find('img').animate({width:590,height:330});
-                $(this).removeClass();
-            });
 
 
             //点击按钮商品滑动
