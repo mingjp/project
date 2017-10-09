@@ -1,9 +1,47 @@
 ;jQuery(function($){
     
-    $('#header').load('common.html .header');
+    $('#header').load('common.html .header',function(){
+      
+         var num=0;
+            carlist.forEach(function(item){
+                console.log(item.qty)
+                num=Number(num)+Number(item.qty);
+            })
+       
+        $('.car').find('span').html('('+num+')');
+
+         // 登录
+            function login(){
+                var user = [];
+                    var cookies = document.cookie;
+                    var has=false;
+                    if(cookies.length>0){
+                        cookies = cookies.split('; ');
+                        cookies.forEach(function(cookie){
+                            var temp = cookie.split('=');
+                            if(temp[0] === 'user'){
+                                has=true;
+                                user = JSON.parse(temp[1]);
+                            }
+                        })
+                    }
+                    console.log(typeof user)
+                    if(has){
+                        $('.id_login').html(user);
+                        $('.id_exit').html('退出');console.log(55);
+                    }else{
+                        $('.id_login').html('请登录');console.log(66);
+                        $('.id_exit').html('免费注册');
+                    }   
+        }
+
+        login();
+    });
     $('#nav').load('common.html .nav');
     $('#footer').load('common.html .footer');
 
+
+    //进入页面读取cookie
     var carlist = [];
         var cookies = document.cookie;
         if(cookies.length>0){
@@ -15,6 +53,8 @@
                 }
             })
         }
+
+          
 
     //吸顶部分
     window.onscroll=function(){
@@ -59,7 +99,7 @@
             if(xhr.status === 200 || xhr.status === 304){
 
                 res = JSON.parse(xhr.responseText);
-                console.log(res);
+                // console.log(res);
 
                 // 生成结构
                 var $ul =$('<ul/>');
@@ -159,7 +199,7 @@
             $('.tocar').css('display','block');
             console.log($(this).parent()[0].id);
 
-            var has = false;
+           var has = false;
                 for(var i=0;i<carlist.length;i++){
                     // 已经存在
                     if(carlist[i].id === $(this).parent()[0].id){
@@ -185,7 +225,7 @@
                     carlist.push(goods)
                     console.log(carlist);
                 }
-                document.cookie = 'carlist=' + JSON.stringify(carlist);
+                document.cookie = 'carlist=' + JSON.stringify(carlist)+';path=/;domain=localhost';
         })
         
         // 向详情页传递id

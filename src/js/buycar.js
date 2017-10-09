@@ -137,13 +137,29 @@
 
                 var date = new Date();
                 date.setDate(date.getDate()+15);
-                document.cookie = 'carlist=' + JSON.stringify(carlist) + ';expires=' + date.toUTCString();
+                document.cookie = 'carlist=' + JSON.stringify(carlist) + ';path=/;domain=localhost;expires=' + date.toUTCString();
+
                 render();
                 console.log(carlist.length)
                 if(carlist.length==0){
                     $('.goodslist').html('');
                 }
         });
+
+
+        //清空购物车
+        $('.del_All').on('click',function(){
+            var date = new Date();
+            date.setDate(date.getDate()-10);
+            document.cookie = 'carlist=x;path=/;domain=localhost;expires=' + date.toUTCString();
+
+            // 清空DOM节点
+            $('.goodslist').html('');
+
+            // 清空价格
+            $('.totalPrice').html('0.00');
+            $('.num').html('0');
+        })
 
         
 })

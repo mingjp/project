@@ -1,5 +1,32 @@
 ;jQuery(function($){
 
+            // 登录
+            function login(){
+                var user = [];
+                    var cookies = document.cookie;
+                    var has=false;
+                    if(cookies.length>0){
+                        cookies = cookies.split('; ');
+                        cookies.forEach(function(cookie){
+                            var temp = cookie.split('=');
+                            if(temp[0] === 'user'){
+                                has=true;
+                                user = JSON.parse(temp[1]);
+                            }
+                        })
+                    }
+                    console.log(typeof user)
+                    if(has){
+                        $('.id_login').html(user);
+                        $('.id_exit').html('退出');console.log(55);
+                    }else{
+                        $('.id_login').html('请登录');console.log(66);
+                        $('.id_exit').html('免费注册');
+                    }   
+        }
+
+        login();
+
             $('.box').mCarousel({
                 width:1200,
                 height:525,
@@ -9,6 +36,27 @@
             });
 
 
+             //进入页面读取cookie
+            var carlist = [];
+            var cookies = document.cookie;
+            if(cookies.length>0){
+                cookies = cookies.split('; ');
+                cookies.forEach(function(cookie){
+                    var temp = cookie.split('=');
+                    if(temp[0] === 'carlist'){
+                        carlist = JSON.parse(temp[1]);
+                    }
+                })
+            }
+            var num=0;
+            carlist.forEach(function(item){
+                console.log(item.qty)
+                num=Number(num)+Number(item.qty);
+            })
+       
+        $('.car').find('span').html('('+num+')');
+       
+        
             //商品展示
             var $topic=$('.topic');
             var xhr=new XMLHttpRequest();

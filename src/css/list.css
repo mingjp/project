@@ -130,7 +130,7 @@
 
 #main .goodslist .list dl:first-child dd ul li:nth-child(9):hover i { background-position: -880px -200px; }
 
-#main .goodslist .list dl:first-child dd ul i { display: inline-block; width: 99px; height: 99px; background: url("../img/siku.png") no-repeat; background-position: 0 -90px; }
+#main .goodslist .list dl:first-child dd ul i { display: inline-block; width: 97px; height: 97px; background: url("../img/siku.png") no-repeat; background-position: 0 -90px; }
 
 #main .goodslist .list dl { border-bottom: 1px dashed #ccc; background: #f5f5f5; overflow: hidden; }
 
